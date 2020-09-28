@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import SocketContext from './socket-context';
 import io from 'socket.io-client';
 
-import tiger from './img/tiger.png';
+import tiger from './img/tiger-outline.png';
 
 import SetUser from './components/set-user';
 
