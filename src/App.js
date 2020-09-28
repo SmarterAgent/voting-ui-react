@@ -8,6 +8,8 @@ import Typography from '@material-ui/core/Typography';
 import SocketContext from './socket-context';
 import io from 'socket.io-client';
 
+import tiger from './img/tiger.png';
+
 import SetUser from './components/set-user';
 
 const server = process.env.NODE_ENV === 'production' ? 'https://voting-poker-server.herokuapp.com/lobby' : 'http://localhost:3001/lobby';
@@ -30,7 +32,8 @@ const App = () => {
     <SocketContext.Provider value={socket}>
       <AppBar position="static" className={classes.root}>
         <Toolbar>
-          <Typography variant="h6">Voting Poker</Typography>
+          <img src={tiger} alt="Tiger Team" height="50" width="50" />
+          <Typography variant="h6"> &nbsp;&nbsp;&nbsp; Voting Poker</Typography>
         </Toolbar>
       </AppBar>
       <SetUser />
