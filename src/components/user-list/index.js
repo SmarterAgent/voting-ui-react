@@ -26,6 +26,7 @@ const UserList = () => {
             <ListItemIcon>
               <VotingIcon hasVoted={user.hasVoted} />
             </ListItemIcon>
+            <ListItemText primary={user.vote} />
           </ListItem>
         ))}
       </List>
